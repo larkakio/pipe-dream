@@ -1,23 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Chakra+Petch:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --bg-primary: #0a0e1a;
+  --bg-secondary: #1a2744;
+  --accent-cyan: #00d4ff;
+  --accent-neon: #39ff14;
+  --accent-gold: #ffd700;
+  --accent-purple: #7c3aed;
+  --accent-base: #0052ff;
+  --text-primary: #e8f4fd;
+  --text-muted: #8899aa;
+  --danger: #ff3860;
+  --pipe-filled: #00d4ff;
+  --pipe-empty: #0d1825;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Chakra Petch", system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: "Space Mono", "JetBrains Mono", monospace;
 }
 
 @layer utilities {
