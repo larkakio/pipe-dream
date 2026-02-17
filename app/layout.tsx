@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "apple-mobile-web-app-status-bar-style": "black-translucent",
     "fc:miniapp": JSON.stringify(FC_EMBED),
     "fc:frame": JSON.stringify(FC_EMBED),
-    "base:app_id": "pipe-dream",
+    "base:app_id": "699432097ca07f5750bbdc85",
   },
 };
 
