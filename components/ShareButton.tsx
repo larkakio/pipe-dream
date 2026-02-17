@@ -3,7 +3,7 @@
 import { useFarcasterSDK } from "@/hooks/useFarcasterSDK";
 
 const APP_URL =
-  process.env.NEXT_PUBLIC_APP_URL || "https://pipe-dream.vercel.app";
+  process.env.NEXT_PUBLIC_APP_URL || "https://pipe-dream-delta.vercel.app";
 
 export function ShareButton({ score }: { score: number }) {
   const sdk = useFarcasterSDK();

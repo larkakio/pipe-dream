@@ -7,24 +7,24 @@
   "miniapp": {
     "version": "1",
     "name": "Pipe Dream",
-    "homeUrl": "https://pipe-dream.vercel.app/",
-    "iconUrl": "https://pipe-dream.vercel.app/icon.png",
-    "imageUrl": "https://pipe-dream.vercel.app/hero-image.png",
+    "homeUrl": "https://pipe-dream-delta.vercel.app/",
+    "iconUrl": "https://pipe-dream-delta.vercel.app/icon.png",
+    "imageUrl": "https://pipe-dream-delta.vercel.app/hero-image.png",
     "buttonTitle": "Play Now",
-    "splashImageUrl": "https://pipe-dream.vercel.app/hero-image.png",
+    "splashImageUrl": "https://pipe-dream-delta.vercel.app/hero-image.png",
     "splashBackgroundColor": "#0a0e1a",
-    "webhookUrl": "https://pipe-dream.vercel.app/api/webhook",
+    "webhookUrl": "https://pipe-dream-delta.vercel.app/api/webhook",
     "subtitle": "Classic pipe puzzle game",
     "description": "Place pipes to guide the flooz. Race the clock, chain loops, beat your high score. Built on Base.",
     "primaryCategory": "games",
     "tags": ["puzzle", "arcade", "web3", "base"],
-    "heroImageUrl": "https://pipe-dream.vercel.app/hero-image.png",
+    "heroImageUrl": "https://pipe-dream-delta.vercel.app/hero-image.png",
     "tagline": "Flow. Loop. Score.",
     "ogTitle": "Pipe Dream",
     "ogDescription": "Classic pipe puzzle on Base & Farcaster",
-    "ogImageUrl": "https://pipe-dream.vercel.app/hero-image.png",
+    "ogImageUrl": "https://pipe-dream-delta.vercel.app/hero-image.png",
     "noindex": false,
     "requiredChains": ["eip155:8453"],
-    "screenshotUrls": ["https://pipe-dream.vercel.app/hero-image.png"]
+    "screenshotUrls": ["https://pipe-dream-delta.vercel.app/hero-image.png"]
   }
 }

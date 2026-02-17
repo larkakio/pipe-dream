@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const APP_URL =
-  process.env.NEXT_PUBLIC_APP_URL || "https://pipe-dream.vercel.app";
+  process.env.NEXT_PUBLIC_APP_URL || "https://pipe-dream-delta.vercel.app";
 
 const FC_EMBED = {
   version: "1",
