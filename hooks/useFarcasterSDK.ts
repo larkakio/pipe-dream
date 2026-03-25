@@ -1,23 +1,24 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useAccount } from "wagmi";
 
 export function useFarcasterSDK() {
-  const [sdk, setSdk] = useState<{
-    actions: { ready: () => Promise<void>; openUrl?: (url: string) => void };
-  } | null>(null);
+  const { address } = useAccount();
 
-  useEffect(() => {
-    let mounted = true;
-    import("@farcaster/miniapp-sdk")
-      .then((mod: { default?: { actions: { ready: () => Promise<void>; openUrl?: (url: string) => void } } }) => {
-        if (mounted) setSdk(mod.default ?? null);
-      })
-      .catch(() => {});
-    return () => {
-      mounted = false;
-    };
-  }, []);
+  const user = address
+    ? {
+        fid: 0,
+        displayName: `${address.slice(0, 6)}…${address.slice(-4)}`,
+      }
+    : null;
 
-  return sdk;
+  const openUrl = (url: string) => window.open(url, "_blank", "noopener,noreferrer");
+
+  return {
+    user,
+    openUrl,
+    sdk: {
+      actions: { openUrl },
+    },
+  };
 }

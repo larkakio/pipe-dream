@@ -1,23 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Providers } from "./providers";
 
 const APP_URL =
   process.env.NEXT_PUBLIC_APP_URL || "https://pipe-dream-delta.vercel.app";
-
-const FC_EMBED = {
-  version: "1",
-  imageUrl: `${APP_URL}/hero-image.png`,
-  button: {
-    title: "Play Pipe Dream",
-    action: {
-      type: "launch_frame",
-      name: "Pipe Dream",
-      url: APP_URL,
-      splashImageUrl: `${APP_URL}/hero-image.png`,
-      splashBackgroundColor: "#0a0e1a",
-    },
-  },
-};
 
 export const metadata: Metadata = {
   title: "Pipe Dream — Mini App",
@@ -32,8 +18,6 @@ export const metadata: Metadata = {
     "mobile-web-app-capable": "yes",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
-    "fc:miniapp": JSON.stringify(FC_EMBED),
-    "fc:frame": JSON.stringify(FC_EMBED),
     "base:app_id": "699432097ca07f5750bbdc85",
   },
 };
@@ -46,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="antialiased min-h-screen bg-[var(--bg-primary)]">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
