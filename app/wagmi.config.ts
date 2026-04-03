@@ -1,6 +1,8 @@
+import { baseAccount } from "@pipe-wagmi/baseAccount";
+import { walletConnect } from "@pipe-wagmi/walletConnect";
+import { injected } from "@wagmi/core";
 import { http, createConfig, createStorage, cookieStorage } from "wagmi";
 import { mainnet } from "wagmi/chains";
-import { baseAccount, injected, walletConnect } from "wagmi/connectors";
 
 import { getTargetChain } from "@/lib/publicEnv";
 

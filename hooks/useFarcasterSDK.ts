@@ -14,11 +14,13 @@ export function useFarcasterSDK() {
 
   const openUrl = (url: string) => window.open(url, "_blank", "noopener,noreferrer");
 
+  const actions = { openUrl };
   return {
     user,
     openUrl,
+    actions,
     sdk: {
-      actions: { openUrl },
+      actions,
     },
   };
 }
